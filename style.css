@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+
+}
+    
+.box {
+    width: 20vh;
+    height: 100vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background:#a5bbdd;
+    position: relative;
+    overflow: hidden;
+    min-width: 20rem;
+    max-height: 35rem;
+}
+
+.box:after {
+    content: "";
+    display: block;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index:11;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 4;
+}
+
+.location {
+    margin-top: 1.5 rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    font-weight:   600;
+}
+
+#date {
+    text-align: center;
+    margin-top:0.5rem;
+    color:#57606f;
+    font-size:1.2rem;
+    font-weight:300;
+    text-transform: uppercase;
+}
+
+.temp {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size:3rem;
+}
+
+.tempminmax {
+    text-align:center;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size:1.2rem;
+    color: #57606f;
+}
+
+#weathericon {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:3em;
+}
+
+#weathericon .fas {
+    font-size: 6rem;
+    animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}

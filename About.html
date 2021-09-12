@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+</head>
+<style>
+    body{
+            background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/15BD7/production/_115374098_social_media_logos.jpg");
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: cover;
+            
+        }
+        .back-nav{
+            background-color:#eeeeee;
+            margin-top: 0;
+        }
+        .heading{
+            color:black;
+            display: inline-block;
+        }
+        .hhome{
+            float:right;
+            color:black;
+            list-style-type: none;
+            text-decoration: none;
+            display: inline-block;
+            padding-right: 20px;
+        }                   
+        .habout{
+            float:right;
+            color:black;
+            list-style-type: none;
+            display: inline-block;
+            padding-right: 20px;
+        }
+        .hmake{
+            float:right;
+            color:black;
+            list-style-type: none;
+            display: inline-block;
+            padding-right: 20px;
+        }
+        .container {
+            padding: 20px;
+            background-color: #eeeeee;
+            width: 80%;
+            color: black;
+        }
+        a:visited{
+            color: black;
+
+        }
+        a:hover{
+            color: #962d2d;
+        }
+</style>
+<body>
+    <body>
+        <nav class="back-nav">
+            <ul>
+                <li class="heading"><h1>Weather Web App</h1></li>
+                <li class="hmake"><h1><a href="{{url_for('index')}}" style="text-decoration: none">Make Predictions</a></h1></li>
+                <li class="habout"><h1><a href="{{url_for('about')}}" style="text-decoration: none">About The Project</a></h1></li>
+                <li class="hhome"><h1><a href="{{url_for('home')}}" style="text-decoration: none">Home</a></h1></li>
+            </ul>
+        </nav>
+        <div class="container"  align="justified" style="margin-top: 50px; background: rgba(255, 255, 255, 1);">
+            <p style="color:black; font-family: Century Gothic; font-size: 16px; margin-left: 10px; margin-right: 10px;">  
+            <h2><strong>DESCRIPTION:</strong></h2>
+                Nowadays, social networks sometimes have become a place for threats, insults, and other components of cyberbullying. A huge number of people are
+involved in online social networks. Hence, the protection of network users from anti-social behavior is an important activity. One of the major tasks of
+such activity is automated detection of the toxic comments. Toxic comments are textual comments with threats, insults, obscene, racism, etc. In recent
+years there have been many cases in which authorities arrested some users of social sites because of the negative (abusive) content of their personal
+pages.
+</p>
+    </div>
+
+    <div class="container"  align="justified" style="margin-top: 50px; background:#eeeeee;">
+        <p style="color:black;margin-left: 10px; margin-right: 10px;">
+        <h2><strong>SOLUTION:</strong></h2>
+        We are proposing a solution in which various techniques are used for human-free detection of the toxic comments. Bag of words statistics and bag of
+        symbols statistics are the typical source of information for the toxic comments detection. Usually, the following statistics-based features are used:
+        length of the comment, number of capital letters, number of exclamation marks, number of question marks, number of spelling errors, number of tokens
+        with non-alphabetic symbols, number of abusive, aggressive, and threatening words in the comment, etc. A neural network model is used to classify the
+        comments.
+        We have developed a Convolutional Neural Network(CNN) model for this. The accuracy we have achieved is 98%. To check the working of our model
+        click on the "Prediction" button in the navigation bar.
+        </p>
+        </div>
+        <div class="container"  align="justified" style="margin-top: 50px; background: rgba(255, 255, 255, 1);">
+            <pre style="color:black; font-family: Century Gothic; font-size: 16px; opacity: 1; margin-left: 10px; margin-right: 10px;">
+            <b>Project developed by:</b>
+            Sharan Patil
+            Ravi Kumar
+</body>
+</html>
